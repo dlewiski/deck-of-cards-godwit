@@ -10,12 +10,6 @@ export const deckOfCards = () => {
         id++
       })
     })
-      //   for (let cardValue in cardValues) {
-      //     console.log(suit)
-      //     deck.push({suit: suit, cardValue: cardValue, id});
-      //     id++
-      //   };
-      // };
-      
+    
     return deck;
 };

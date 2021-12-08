@@ -13,7 +13,6 @@ function DeckDisplay(props) {
 
             [deckToShuffle[deckLength], deckToShuffle[randomPosition]] = [deckToShuffle[randomPosition], deckToShuffle[deckLength]];
     }
-    console.log(deckToShuffle)
     setCurrentDeck(deckToShuffle);
     }
 
@@ -42,6 +41,7 @@ function DeckDisplay(props) {
 
         </div>
         <h1>Number of Players {numOfPlayers}</h1>
+        <input type="number" />
       </div>
     );
   }

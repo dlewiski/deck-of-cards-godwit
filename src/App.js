@@ -1,10 +1,13 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import { deckOfCards } from "./Deck";
 import DeckDisplay from "./components/deck_display";
 function App() {
-  const [deck, setDeck] = useState(deckOfCards())
+  const [deck, setDeck] = useState([])
+  
+  useEffect(() => {
+    setDeck(deckOfCards());
+  }, [])
 
-  console.log(deck)
   return (
     <div className="App">
       <DeckDisplay deck={deck} />
